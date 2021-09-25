@@ -1,0 +1,106 @@
+
+.container{
+    height: 8vh;
+    background-color: hsla(345, 46%, 60%, 0.367);
+}
+.logo img{
+    height: 30px;
+    width: 30px;
+}
+
+.hamburger{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: transparent;
+    box-shadow: -2px -2px 10px 1px rgba(255, 255, 255, 0.4),
+    2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+    .hamburger.clicked{
+        box-shadow: inset -2px -2px 5px 1px rgba(255, 255, 255, 0.4),
+        inset 2px 2px 7px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .hamburger .line{
+        height: 3px;
+        width: 20px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .navcontainer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60vh;
+        width: 100vw;
+        padding: 20vh 0;
+        background-color: hsla(345, 46%, 60%, 0.93);
+        clip-path: circle(0px at 95% 5%);
+        -webkit-clip-path: circle(0px at 95% 5%);
+        transition: -webkit-clip-path 0.5s ease-in-out;
+        font-size: 1.5rem;
+    }
+    .navcontainer.open{
+        clip-path: circle(1000px at 95% 5%);
+        -webkit-clip-path: circle(1000px at 95% 5%);
+    }
+/*home page buttons*/
+.homepg h1{
+    margin-bottom: 40px;
+}
+.btncontainer{
+    flex-direction: column;
+    width: auto;
+}
+.button{
+    width: auto;
+}
+
+/* Service section */
+
+@media screen and (max-width: 450px){
+    .card{
+        height: 39vh;
+    }
+}
+.card:hover{
+    height: 380px;
+}
+
+
+#services{
+    margin-bottom: 50vh;
+    padding: 0;
+    height: auto;
+}
+
+/* location */
+
+.map{
+    width: 80%;
+    height: 250px;
+}
+
+
+
+/* Contact us */
+
+form{
+    width: 60%;
+}
+
+.wtsapp{
+    height: 4vh;
+    width: 4vh;
+}
+.wtsapp img{
+    height: 4vh;
+    width: 4vh;
+}
